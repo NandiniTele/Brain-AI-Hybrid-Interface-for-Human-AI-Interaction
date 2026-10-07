@@ -1,1 +1,46 @@
-[{"name": "CNN", "acc": 90.9, "precision": 91.3, "recall": 90.5, "f1": 90.7, "latency": 12, "training_time": 30.6, "parameters": "0.8M"}, {"name": "LSTM", "acc": 92.5, "precision": 92.6, "recall": 92.0, "f1": 92.3, "latency": 18, "training_time": 45.8, "parameters": "1.2M"}, {"name": "CNN+LSTM", "acc": 94.8, "precision": 94.8, "recall": 94.3, "f1": 94.8, "latency": 22, "training_time": 61.1, "parameters": "1.8M"}, {"name": "HybridBCINet", "acc": 98.2, "precision": 97.8, "recall": 97.5, "f1": 97.6, "latency": 28, "training_time": 76.4, "parameters": "1.1M"}]
+[
+  {
+    "name": "RBF SVM (Calibrated/Scaled)",
+    "acc": 41.47,
+    "f1": 38.73,
+    "parameters": "Dual"
+  },
+  {
+    "name": "Linear SVM",
+    "acc": 38.05,
+    "f1": 34.12,
+    "parameters": "Linear"
+  },
+  {
+    "name": "Random Forest",
+    "acc": 36.70,
+    "f1": 33.54,
+    "parameters": "100 trees"
+  },
+  {
+    "name": "1D Residual CNN (Best Deep)",
+    "acc": 34.17,
+    "f1": 31.50,
+    "parameters": "86.2K"
+  },
+  {
+    "name": "Residual CNN + BiLSTM",
+    "acc": 32.27,
+    "f1": 31.05,
+    "parameters": "312.4K"
+  },
+  {
+    "name": "HybridBCINet (Weighted CE)",
+    "acc": 29.93,
+    "f1": 29.00,
+    "parameters": "731.3K"
+  },
+  {
+    "name": "HybridBCINet (Official Clean Baseline)",
+    "acc": 24.89,
+    "precision": 24.32,
+    "recall": 24.94,
+    "f1": 17.54,
+    "parameters": "731.3K"
+  }
+]

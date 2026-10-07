@@ -12,11 +12,13 @@ A high-performance, software-based **Brain–AI Hybrid Interface Simulator** des
 ## 🚀 Key Capabilities
 
 - **Software-Based Signal Pipeline**: MNE-Python based digital filtering (Band-pass 0.5–40 Hz, Notch 50 Hz, Z-score normalization, channel standardisation to 19 channels in the international 10–20 system).
-- **Deep Learning Architecture**: PyTorch implementation of **Multi-scale CNN → BiLSTM → Transformer Encoder → Prediction Fusion → Classifier** predicting 5 cognitive/emotional states (Calm, Focused, Stressed, Fatigued, Excited) and 7 continuous regression indices (Focus, Attention, Stress, Fatigue, Cognitive Load, Valence, Arousal).
+- **Deep Learning Architecture**: PyTorch implementation of **Multi-scale CNN → BiLSTM → Transformer Encoder → Prediction Fusion → Classifier** predicting 5 task-condition/cognitive-state classes (*Calm, Focused, Stressed, Fatigued, Excited* as semantic task-state aliases/proxies) and 7 continuous cognitive regression indices (Focus, Attention, Stress, Fatigue, Cognitive Load, Valence, Arousal).
 - **Explainable AI (XAI)**: Feature Attribution (Explainability Proxy) providing band-power relative importance across Delta, Theta, Alpha, Beta, and Gamma frequency bands.
 - **Audited Dataset Analytics**: Validated on the **PhysioNet EEGBCI** dataset (3 subjects, 5 selected runs per subject, 15 clusters, 735 windows of 2-second duration sampled at 160 Hz, mapped from 64 original channels to 19 standard 10–20 channels).
 - **Dual Persistence Architecture**: SQLite serves as the default local persistence layer for session logs and telemetry, with MongoDB supported as an optional database backend.
 - **Real-Time Research Dashboard**: Interactive WebSocket telemetry streaming at ~25 FPS with brain region topographic mapping, 10–20 scalp map, time-series oscilloscope, and dynamic model metrics.
+
+> **Scientific Clarification on Task Conditions & State Aliases**: The labels *Calm*, *Focused*, *Stressed*, *Fatigued*, and *Excited* represent semantic user-interface aliases mapped to standardized PhysioNet EEGBCI sensorimotor task conditions (Baseline Eyes-Open Rest, Left/Right Fist Motor Imagery, Bilateral Fist/Foot Motor Imagery, Eyes-Closed Rest, and Motor Execution). They serve as software state representations for BCI interface simulation and are **not** ground-truth human emotional affect annotations.
 
 ---
 
@@ -44,7 +46,7 @@ A high-performance, software-based **Brain–AI Hybrid Interface Simulator** des
                 │
                 ▼
    [Global Average Pooling & Prediction Heads]
-   ├─ 5-Class Emotion Logits
+   ├─ 5-Class Task-Condition Logits
    └─ 7-Head Cognitive Regression Indices
 ```
 

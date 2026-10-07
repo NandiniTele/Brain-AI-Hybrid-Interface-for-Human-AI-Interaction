@@ -35,3 +35,9 @@ Thumbs.db
 # Local Physiological Raw Cache (Keep git lightweight)
 backend/data/physionet/
 backend/data/cache/
+
+# Local Runtime Databases & Scratch
+*.db
+telemetry.db
+backend/telemetry.db
+scratch_enhanced_results.txt
