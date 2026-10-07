@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+backend/venv/
+.venv/
+env/
+
+# Python Cache & Build
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+frontend/dist/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials/
+secrets/
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Deployment & Vercel
+.vercel
+.cache/
+
+# Local Physiological Raw Cache (Keep git lightweight)
+backend/data/physionet/
+backend/data/cache/

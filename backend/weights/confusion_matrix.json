@@ -1,0 +1,90 @@
+{
+  "confusion_matrix_raw": [
+    [
+      0,
+      18,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      37,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      37,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      18,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      37,
+      0,
+      0,
+      0
+    ]
+  ],
+  "confusion_matrix_norm": [
+    [
+      0.0,
+      100.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      100.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      100.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      100.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      100.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "classes": [
+    "Eyes-Open Rest",
+    "Left/Right Fist Motor Imagery",
+    "Both-Fists/Both-Feet Motor Imagery",
+    "Eyes-Closed Rest",
+    "Left/Right Fist Motor Execution"
+  ],
+  "aliases": [
+    "Calm",
+    "Focused",
+    "Stressed",
+    "Fatigued",
+    "Excited"
+  ]
+}

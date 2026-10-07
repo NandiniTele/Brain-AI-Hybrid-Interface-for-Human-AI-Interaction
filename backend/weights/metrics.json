@@ -1,0 +1,46 @@
+{
+  "accuracy": 25.17,
+  "precision": 5.03,
+  "recall": 20.0,
+  "f1_score": 8.04,
+  "cross_val_score": 27.21,
+  "cross_val_f1": 21.29,
+  "roc_auc": 0.4974,
+  "cohens_kappa": 0.0,
+  "matthews_corrcoef": 0.0,
+  "per_class_precision": [
+    0.0,
+    0.25170068027210885,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "per_class_recall": [
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "per_class_f1": [
+    0.0,
+    0.40217391304347827,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "epoch": "50/50",
+  "training_time_sec": 187.6,
+  "parameters": "731.3K",
+  "raw_parameters": 731340,
+  "total_samples": 735,
+  "train_samples_raw": 588,
+  "train_samples_balanced": 740,
+  "val_samples": 147,
+  "chance_level": 20.0,
+  "dataset": "PhysioNet EEGBCI",
+  "subjects": "1, 2, 3",
+  "channels": 19,
+  "sampling_rate": 160,
+  "window_duration_sec": 2
+}
