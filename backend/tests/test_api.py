@@ -55,8 +55,10 @@ def test_train_requires_auth():
     response = client.post("/train")
     assert response.status_code == 401
 
-def test_train_accepts_valid_token():
+def test_train_accepts_valid_token(monkeypatch):
     """POST /train must accept a request with a valid JWT."""
+    import main
+    monkeypatch.setattr(main, "train_model", lambda **kwargs: None)
     login = client.post("/auth/token", json={"username": "admin", "password": "admin"})
     token = login.json()["access_token"]
     response = client.post(
@@ -65,3 +67,5 @@ def test_train_accepts_valid_token():
     )
     # 200 = training started; 200 with already_training is also acceptable
     assert response.status_code == 200
+
+
